@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <children>
+        <Pane layoutX="10.0" layoutY="14.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label fx:id="lbl_username" layoutX="310.0" layoutY="250.0" minHeight="30.0" minWidth="200.0" text="">
+               <font>
+                  <Font name="Zawgyi-One" size="12.0" />
+               </font></Label>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <TextField fx:id="txt_username" layoutX="510.0" layoutY="250.0" minHeight="30.0" minWidth="200.0" />
+            <PasswordField fx:id="txt_password" layoutX="510.0" layoutY="310.0" minHeight="30.0" minWidth="200.0" />
+            <Label fx:id="lbl_password" layoutX="310.0" layoutY="310.0" minHeight="30.0" minWidth="200.0" text="">
+               <font>
+                  <Font name="Zawgyi-One" size="12.0" />
+               </font></Label>
+            <Button fx:id="btn_login" layoutX="462.0" layoutY="380.0" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#btnLoginClick" text="Login" />
+            <Label fx:id="lbl_show" alignment="CENTER" layoutX="312.0" layoutY="500.0" minHeight="30.0" minWidth="400.0" text="Label" textAlignment="CENTER" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
