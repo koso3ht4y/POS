@@ -56,4 +56,20 @@ public class DBConnection {
         }
     }
     
+    public ResultSet getILoginDetail(String username, String password) {
+        try {
+            getconnection();
+            String command = "{call USERPKG.GET_LOGIN_DETAIL(?,?,?)}";
+            CallableStatement csmt = connection.prepareCall(command);
+            csmt.setString(1, username);
+            csmt.setString(2, password);
+            csmt.registerOutParameter(3, OracleTypes.CURSOR);
+            csmt.execute();
+            ResultSet rs = (ResultSet) csmt.getObject(3);
+            return rs;
+        } catch (SQLException ex) {
+            return null;
+        }
+    }
+    
 }

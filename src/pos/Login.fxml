@@ -24,7 +24,7 @@
                   <Font name="Zawgyi-One" size="12.0" />
                </font></Label>
             <Button fx:id="btn_login" layoutX="462.0" layoutY="380.0" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#btnLoginClick" text="Login" />
-            <Label fx:id="lbl_show" alignment="CENTER" layoutX="312.0" layoutY="500.0" minHeight="30.0" minWidth="400.0" text="Label" textAlignment="CENTER" />
+            <Label fx:id="lbl_show" alignment="CENTER" layoutX="312.0" layoutY="500.0" minHeight="30.0" minWidth="400.0" text="" textAlignment="CENTER" />
          </children>
       </Pane>
     </children>
